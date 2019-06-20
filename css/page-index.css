@@ -1,0 +1,252 @@
+body{
+	/*设置body背景水平方向平铺*/
+	background: url(../img/bd-bg.png) repeat-x;
+}
+/*解决高度塌陷问题*/
+.clearfix:before,
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+/*设置固定宽度和居中*/
+.w{
+	width: 940px;
+	margin: 0 auto;
+}
+.header{
+	/*上内边距*/
+	padding-top: 37px;
+	/*下内边距*/
+	padding-bottom: 46px;
+}
+.logo{
+	margin-left: 15px;
+}
+
+.nav{
+	/*设置浮动*/
+	float: right;
+	margin-top: 22px;
+}
+.nav li{
+	/*设置向左浮动*/
+	float: left;
+	padding: 0 10px 8px;
+	border-left: 1px #d6d6d6 dotted;
+}
+.nav a{
+	color: #666;
+	font: bold 14px georgia;
+	/*去除下划线*/
+	text-decoration: none;
+}
+/*设置鼠标移入超链接效果*/
+.nav a:hover{
+	color: #a1a1a1;
+}
+.nav p{
+	color: #b7b7b7;
+	font-size: 11px;
+	font: tahoma;
+}
+.banner{
+	height: 356px;
+	/*设置阴影背景*/
+	background: url(../img/banner-bg.png) no-repeat bottom center;
+	/*开启相对定位*/
+	position: relative;
+}
+.pointerDiv{
+	/*开启绝对定位*/
+	position: absolute;
+	top: 314px;
+	left: 15px;
+}
+.pointerDiv a{
+	/*设置浮动使其改变位置并变为块元素*/
+	float: left;
+	width: 17px;
+	height: 17px;
+	background: url(../img/pointer.png) no-repeat;
+	/*设置一个左外边距*/
+	margin-left: 4px;
+}
+.pointerDiv .active,
+.pointerDiv a:hover{
+	background: url(../img/pointer-ac.png) no-repeat;
+}
+.content h1{
+	/*文字居中*/
+	text-align: center;
+	font: bold 24px georgia;
+	/*设置上下内边距*/
+	padding: 6px 0 20px 0;
+	/*设置下外边距*/
+	margin-bottom: 38px;
+	background: url(../img/line.png) no-repeat bottom center;
+}
+/*设置中间三个div的样式*/
+.content .pl, .content .cs, .content .uc,
+.contact .sc, .contact .co, .contact .nu{
+	float: left;
+	width: 300px;
+}
+.content .cs, .contact .co{
+	/*给中间的div添加左右边距*/
+	margin: 0 20px;
+}
+.content h2{
+	color: #11719e;
+	font-size: 21px;
+	font: georgia;
+}
+.content .p1{
+	color: #8c8c8c;
+	font-size: 12px;
+	font: helvetica;
+}
+.content .p2{
+	height: 92px;
+	color: #3e3e3e;
+	font-size: 13px;
+	font: helvetica;
+	word-spacing: 2px;
+}
+.content .imgDiv{
+	width: 299px;
+	height: 190px;
+	background: url(../img/img-bg.png) no-repeat;
+	/*设置上下外边距*/
+	margin: 16px 0 10px 0;
+	/*设置水平居中*/
+	text-align: center;
+	/*上内边距*/
+	padding-top: 12px;
+}
+.content .lm{
+	display: block;
+	width: 163px;
+	height: 40px;
+	background: url(../img/btn1.png) no-repeat;
+	text-decoration: none;
+	color: #016999;
+	font: helvetica;
+	font-size: 12px;
+	line-height: 40px;
+	text-indent: 1em;
+	margin-bottom: 35px;
+}
+.contact{
+	background: url(../img/line.png) no-repeat top center;
+}
+.contact .txt{
+	width: 276px;
+	height: 33px;
+	line-height: 33px;
+	background: url(../img/input.png) no-repeat;
+	/*去除默认边框*/
+	border: none;
+	padding: 0 10px;
+	margin: 0 0 16px;
+}
+.contact .tarea{
+	width: 276px;
+	height: 114px;
+	background: url(../img/textarea.png) no-repeat;
+	border: none;
+	/*去除ie8里的滚动条*/
+	overflow: auto;
+	overflow-x: hidden;
+	/*设置文本域不能调整大小*/
+	resize: none;
+	padding: 10px;
+	margin: 0;
+}
+.contact .btn{
+	width: 163px;
+	height: 32px;
+	background: url(../img/btn2.png) no-repeat;
+	border: none;
+	padding: 0;
+	margin: 11px 0 23px;
+	color: white;
+	font-size: 13px;
+	font: georgia;
+	text-align: left;
+	text-indent: 1em;
+	/*设置指针样式*/
+	cursor: pointer;
+}
+.contact h2{
+	color: #444;
+	font-size: 18px/1;
+	font: georgia;
+	/*设置下边框*/
+	border-bottom: 1px dashed #d3d3d3;
+	/*内边距*/
+	padding: 44px 0 10px;
+	/*外边距*/
+	margin-bottom: 15px;
+}
+.sc .p1{
+	color: #444444;
+	font-size: 12px;
+	font: helvetica;
+}
+.sc .icon{
+	font-size: 0;
+	margin-top: 4px;
+}
+.sc .icon a{
+	margin-right: 6px;
+}
+.sc .nl{
+	font: bold 18px/1 "gill sans mt";
+	padding: 36px 0 10px;
+	margin-bottom: 14px;
+}
+.sc .txt{
+	margin-top: 16px;
+	margin-bottom: 3px;
+}
+.nu p{
+	font-size: 12px;
+	color: #444444;
+	font: helvetica;
+	height: 58px;
+	border-bottom: 1px dashed #d3d3d3;
+	margin-bottom: 14px;
+	padding-bottom: 9px;
+}
+.nu img{
+	float: left;
+}
+.nu .no{
+	margin-bottom: 0;
+}
+.footer{
+	height: 173px;
+	background: #333;
+	border-top: 10px solid #4c4c4c;
+}
+.footer a, .footer p{
+	color: #999;
+	font: helvetica;
+	font-size: 11px;
+	text-decoration: none;
+}
+.footer a:hover{
+	color: #cccaca;
+}
+ .footer .copy{
+	 float: right;
+ }
+ .footer p{
+	 margin-left: 8px;
+	 margin-right: 23px;
+	 margin-bottom: 10px;
+ }
+ .footer .w{
+	 padding-top: 18px;
+ }
